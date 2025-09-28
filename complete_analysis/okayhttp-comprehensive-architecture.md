@@ -3,7 +3,7 @@
 ## Repository Overview
 
 **Repository:** square/okhttp  
-**Description:** Square’s meticulous HTTP client for the JVM, Android, and GraalVM.  
+**Description:** Square's meticulous HTTP client for the JVM, Android, and GraalVM.  
 **Language:** Kotlin  
 **Stars:** 46,658  
 **Forks:** 9,242  
@@ -19,7 +19,6 @@ Copy the diagram code to [Mermaid Live](https://mermaid.live) to view the intera
 
 ### Overall System Architecture
 
-```mermaid
 ```mermaid
 graph TB
     subgraph "OkHttp Client Architecture"
@@ -87,11 +86,9 @@ graph TB
     Call --> AppInterceptors
     ConnectionPool --> Socket
 ```
-```
 
 ### API Flow Diagram
 
-```mermaid
 ```mermaid
 sequenceDiagram
     participant App as Application
@@ -138,11 +135,9 @@ sequenceDiagram
 
     Call --> App: response
 ```
-```
 
 ### Component Architecture
 
-```mermaid
 ```mermaid
 graph TB
     subgraph "Core Components"
@@ -196,11 +191,9 @@ graph TB
     OkHttpClient --> EventSystem
     OkHttpClient --> TaskRunner
 ```
-```
 
 ### Data Flow Architecture
 
-```mermaid
 ```mermaid
 flowchart TD
     subgraph "Request Processing"
@@ -248,7 +241,6 @@ flowchart TD
         S --> BB[Connection Cleanup]
         BB --> AA
     end
-```
 ```
 
 ## 🌐 API & Integration Analysis
